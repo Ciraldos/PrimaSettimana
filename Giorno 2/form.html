@@ -12,14 +12,50 @@
         <fieldset>                      <!-- -->
             <legend>Anagrafica</legend> <!-- forniscono una legenda a un particolare set di campi -->
             <label for="username">Nome utente:</label>             <!-- etichetta: serve per descrivere i campi (serve per migliorare l'accessibilità)-->
-            <input type="text" name="username" placeholder="username">
+            <input type="text" name="username" placeholder="username"> <!-- placeholder = testo segnaposto-->
             <br>
             <label for="password"> Password:</label>
             <input type="password" name="password">
             <br>
             <label for="email">Inserisci la tua email:</label>
             <input type="email" name="email">
-
+            <br>
+            <label for="data">Inserisci una data:</label>
+            <input type="date" name="data">
+            <br>
+            <label for="anni">Anni:</label>
+            <input type="number" name="anni" min="0" max="99">
+            <br>
+            <label for="orario">Orario:</label>
+            <input type="time" name="orario">
+            <br>
+            <label for="cv">Carica il CV:</label>
+            <input type="file" name="cv">
+            <br>
+            <label for="avanzamento_lavoro">Range:</label>
+            <input type="range" name="range" min="0" max="100" value="10" step="5">
+            <br>
+            <label for="nascosto">campo nascosto</label>
+            <input type="hidden" name="nascosto">
+            <!-- altri input type: tel, month, week, image, color -->
+            <br>
+            <label for="autorizzo">Autorizzo l'utilizzo dei miei dati personali</label>
+            <input type="checkbox" name="autorizzo" checked> <!-- checked = flag in automatico -->
+            <br>
+            <!-- attributi dei campi -->
+            <label for="utente">Inserisci il tuo utente</label>
+            <input type="text" required> <!-- con required il campo sarà obbligatorio -->
+            <br>
+            <label for="utente_premium">Utente Premium</label>
+            <input type="text" placeholder="Passa a Premium" disabled> <!-- campo disabilitato -->
+            <br>
+            <label for="punteggio">Risultato votazione</label>
+            <input type="text" readonly value="7"> <!-- readonly il campo è in sola lettura-->
+        </fieldset>
+        <fieldset>
+            <legend>Info Ulteriori</legend>
+            <label for="commento">Lascia un commento</label>
+            <textarea name="commento" placeholder="Inserisci il tuo messaggio:" rows="5" cols="80"></textarea>
         </fieldset>
     </form>
 </body>
