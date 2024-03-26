@@ -56,7 +56,32 @@
             <legend>Info Ulteriori</legend>
             <label for="commento">Lascia un commento</label>
             <textarea name="commento" placeholder="Inserisci il tuo messaggio:" rows="5" cols="80"></textarea>
+            <br>
+            <!-- scelte multiple -->
+            <label for="provincia">Scegli la provincia</label>
+            <select name="provincia">
+                <option value=""></option>
+                <optgroup label="Lombardia">
+                <option value="MI">Milano</option>
+                <option value="VA">Varese</option>
+                <option value="CO">Como</option>
+            </optgroup>
+            <optgroup label="Emilia Romagna">
+                <option value="BO">Bologna</option>
+                <option value="RE">Reggio Emilia</option>
+            </optgroup>
+            </select>
+            <br>
+            <!-- scelte multiple altro modo -->
+            <label for="domanda_1">Che cos'è il tag body?</label><br>
+            <input type="radio" name="domanda_1" value="0">è un attributo css<br>
+            <input type="radio" name="domanda_1" value="0">è una variabile js<br>
+            <input type="radio" name="domanda_1" value="1">è un tag html<br>
         </fieldset>
+        <button type="submit">Invia il form</button>
+        <button type="reset">Cancella i dati</button>
+        <input type="submit" value="Invia i dati">
+        <input type="reset" value="Cancella i dati">
     </form>
 </body>
 </html>
