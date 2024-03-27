@@ -1,0 +1,39 @@
+#container {
+    width: 1024;
+    border: 1px solid #000;
+    margin:0 auto ; /* spaziatura rispetto ad un contenuto verso l'esterno */
+    /*
+    1 valore: -> verso tutti e 4 i lati
+    2 valori: -> 1° sopra e sotto, 2° sx/dx
+    3 valori: -> 1°  sopra, 2° sx/dx, 3° sotto
+    4 valori: -> 1° sopra, 2° dx , 3° sotto, 4° sx
+    */
+}
+
+/*********************** HEADER ************************/
+
+header {
+    background-color: gray;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: aquamarine;
+}
+
+/************************ Nav ****************************/
+nav {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+}
