@@ -1,0 +1,5 @@
+/* unità di misura */
+p {font-size: 30px;}
+p {font-size: 1em;} /* proporzionale all'elemento parent */
+p {font-size: 1.1 rem;} /* proporzionale non all'elemento parent, ma a root */
+div {width: 50%; margin-left: 25%;} /*proporzionale all'elemento parent, div sarà il 50% di body */
