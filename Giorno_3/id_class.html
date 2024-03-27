@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impariamo i css</title>
+    <!-- seconda opzione: inserisco un tag style all'interno di <head>-->      
+    <style>
+      /* qui dentro vige la sintassi css - i commenti in css si fanno così */
+      h1 {color: aqua; text-align: left;}
+      p {font-size: 12px;}  
+    </style>
+    <link rel="stylesheet" href="./css/stile.css">
+    <!-- css esterno è il metodo raccomandato 
+         mi permetterà di collegare il foglio di stile a tutte le pagine che voglio formattare -->
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Titolo principale</h1>
+    <p style="font-size: 14 px;">Testo della pagina con <strong style="color: brown;">elemento in evidenza</strong></p>
+    <!-- Css inline è una metodologia deprecata:
+    1) è buona norma separare contenuto e formattazione
+    2) Poco razionale intervenire su ogni riga di codice per fare delle modifiche
+    3) Il peso delle pagine aumenta molto
+    4) Compatibilità cross device: quando avrò la media query l'istruzione inline sarà sempre la più prossima
+    5) posizionamento: le keyword vengono "annacquate" in mezzo al codice
+    -->
+    <!-- 
+        priorità css
+        1) Priorità a cascata (dichiarazioni più prossime "comandano" su quelle più lontane)
+        2) Priorità specifica (l'ultima dichiarazione sovrascrive la precedente)
+            p (color:blue)
+            p (color: red) -> questa dichiarazione è quella valida
+        3) priorità gerarchica: stile inline (priorità massima)(1000punti) > id(100 punti) > classi(10 punti)    
+    -->
+    <h1 id="titolo_principale">Questo titolo potrà essere selezionato via css grazie all'id</h1>
+    <p class="autore">Federico De Ambrosis</p>
+    <p class="categoria_articolo">Tecnologia</p>
+    <!-- 
+        id e classi
+        id -> identifica in modo univoco un tag html -> può essere ripetuto solo una volta
+                                                     -> nel css l'id viene richiamato con il simbolo #
+        classi -> selezionano più elementi html      -> possono essere ripetute n volte
+                                                     -> nel css la classe viene richiamata con il simbolo .
+    -->
+</body>
+</html>
