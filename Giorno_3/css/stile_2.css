@@ -3,3 +3,15 @@ p {font-size: 30px;}
 p {font-size: 1em;} /* proporzionale all'elemento parent */
 p {font-size: 1.1 rem;} /* proporzionale non all'elemento parent, ma a root */
 div {width: 50%; margin-left: 25%;} /*proporzionale all'elemento parent, div sarà il 50% di body */
+/* vw viewport width -> si riferisce alla larghezza della viewport del device */
+/* vh viewport height -> si riferosce all'altezza della viewport del device */
+
+/* esempio */
+p {font-size: 90%} /* div 16px -> p -> 14 px*/
+p {font-size: 0.8em} /* div 16 px -> p -> 12px*/
+p {font-size: 0.5rem;} /* body 16px -> 8 px */
+p {font-size: 0.9vw} /* viewport 400px -> p -> 3.6px */
+
+/* colori */
+article p {color: blueviolet} /*keyword*/
+articole p{color: #ff0000;} /* esadecimale */
