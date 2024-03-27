@@ -14,4 +14,40 @@ p {font-size: 0.9vw} /* viewport 400px -> p -> 3.6px */
 
 /* colori */
 article p {color: blueviolet} /*keyword*/
-articole p{color: #ff0000;} /* esadecimale */
+article p{color: #ff0000;} /* esadecimale */
+article p{color: #f00;} /* esa sintentico f=ff 0=00 0=00 */
+article p {color: #0f0;}
+article p {color: #00f}
+article p {color: rgb(0,0,255);} /* rgb (valori tra 0 e 255) */
+article p {color: rgb (0,0,255,0.5)} /* rgb + canale alpha - opacità */
+
+/* font */
+section p {font-family: 'Courier New', Courier, monospace}
+/* Arial, Verdana ; helvetica, Georgia, Times new roman, Tahoma */
+section p {font-family: "Open Sans", sans-serif;}
+
+/*formattazione di testi */
+#secondo {
+    font-size: 1.1em; /*px rem*/
+    font-style: italic;/*corsivo, valore di default: normal */
+    font-weight: bold; /* grassetto, valore di default: normal */
+    line-height: 1.5; /* valore da zero in su */
+}
+
+div p {
+    color: #00f;
+    text-align: justify; /* left, right, center */
+    text-indent: 2em; /* rientro della prima linea */
+    text-transform: uppercase; /* lowercase */
+}
+
+/* aggiungere ombre */
+
+div h1 {
+    text-shadow: 4px 4px 12px #666;
+    /*
+    1° valore -> spostamento orizzontale
+    2° valore -> spstamento verticale
+    3° valore -> spread sfocatura
+    4° valore -> colore */
+}
