@@ -14,6 +14,10 @@
         input:out-of-range{border: 2px solid red}
         input:valid {background-color: darkcyan; border: 1px solid green}
         input:invalid {background-color: darkred; border: 1px solid red}
+        input:required{border:3px solid red}
+        /* per aggiungere qualcosa (ad esempio ::after) selettore::after {content: " *campo obbligatorio"}
+        https://www.w3schools.com/cssref/sel_after.php
+        */
     </style>
 </head>
 <body>
@@ -25,6 +29,8 @@
         <input type="radio" value="F" name="gender" checked>Femmina<br>
         <input type="number" min="18" max="44" value="43"><br>
         <input type="email" value="support@epicode.it">
+        <input type="text" required>
+        <input type="submit">
         
     </form>
 </body>
