@@ -1,6 +1,4 @@
 /******************* HEADER *****************/
-
-
 header div{
     padding:0 40px;
     margin:0 auto;
@@ -137,35 +135,41 @@ span{
 }
 
 #immagini{
-    text-align: center;
-    padding:20px;
+    
+    text-align: center;  
+    
 }
 
 #immagini section{
-    float:left;
+    float: left;
     margin-bottom: 40px;
 }
 
 #immagini #fotouno{  
     border:2px solid #dee1e3;
-    margin-bottom: 30px;
+    margin: 20px;
+    
 }
 
 
 #immagini #fotodue{
     border:2px solid #dee1e3;
     margin-bottom: 30px;
+    margin: 10px;
+    
 }
 
 
 #immagini #fototre{
     border:2px solid #dee1e3;
-    margin-bottom: 30px;
+    margin: 10px;
+    
 }
 
 /***************** FOOTER *************/
 
 footer{
+    margin-top: 35%;
     text-align: center;
     padding: 25px;
     background-color: #25a2c3;
@@ -216,6 +220,6 @@ footer div p a{
 }
 
 footer hr{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 40%;
+    margin-right: 40%;
 }
