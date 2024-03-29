@@ -1,37 +1,38 @@
 /******************* HEADER *****************/
 
+
 header div{
-    
-    text-align: center;
+    padding:0 40px;
     margin:0 auto;
     background-position: center;
     background-color: black;
 }
 
 header div img{
-    
+    text-align: left;    
     margin: 20px auto;
 }
 
 #web{
+    
+    text-align: center;
     background-image:url(../images/banner.jpg) ;
     background-size: cover;
-
-    
-    
+    margin-bottom: 100px;
 }
 
 #title {
-    
+    margin-top: 100px;
+    text-align: center;
     color: #25a2c3;
     font-size: 2.3em;
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    
-       
+    font-weight: bold;     
 }
 
 .body{
+    width: 50%;
+    text-align: center;
     margin-top: 30px;
     padding: 20px;
     margin:0 auto;
@@ -41,14 +42,13 @@ header div img{
     line-height: 1.65;
 }
 
-
-
 #web #link{
-    width: 150px;
-    height: 30px;
+    width: 90px;
+    height: 32px;
     padding-top: 13px; 
     background-color: #f04c2f;
     border-radius: 5px;
+    margin-bottom: 100px;
 }
 
 a{  
@@ -79,8 +79,32 @@ main{
     line-height: 1.65;
 }
 
+#primo {
+    margin-bottom: 5%;
+}
+
+#primo .body{
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    color:#393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+}
+
+#primo .heading{
+    text-align: justify;
+    margin-top: 20px;
+    color: #25a2c3;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height: 1.65;
+}
+
 #primo img{
-    
+    float: left;
+    margin-left: 20%;
+    margin-right: 10%;
     border-radius: 50%;
 }
 
@@ -112,14 +136,17 @@ span{
     font-weight: lighter;
 }
 
-#immagini {
-    
+#immagini{
     text-align: center;
     padding:20px;
 }
 
-#immagini #fotouno{
-    
+#immagini section{
+    float:left;
+    margin-bottom: 40px;
+}
+
+#immagini #fotouno{  
     border:2px solid #dee1e3;
     margin-bottom: 30px;
 }
@@ -137,18 +164,16 @@ span{
 }
 
 /***************** FOOTER *************/
+
 footer{
     text-align: center;
     padding: 25px;
     background-color: #25a2c3;
-    
-    
 }
 
 footer .heading{
     color: white;
-    font-size: 1.9em;
-   
+    font-size: 1.9em;  
 }
 
 footer a:hover{
@@ -156,7 +181,6 @@ footer a:hover{
 }
 
 footer a{
-   
     font-family: "Open Sans", sans-serif;
     color:#ffffff;
     font-size: 1.2rem;
@@ -189,7 +213,6 @@ footer div p a{
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 0.8rem;
-    
 }
 
 footer hr{
